@@ -143,21 +143,21 @@ public class EasyTipDragView extends RelativeLayout implements AbsTipAdapter.Dra
 
     @Override
     public void onClick(View v) {
-        switch (v.getId()){
+//        switch (v.getId()){
 
-            case R.id.drag_close_img:
-                //关闭，不回调数据
-                close();
-                break;
-            case R.id.drag_finish_tv:
-                //完成关闭，回调数据
-                dragTipAdapter.cancelEditingStatus();
-                if(completeCallback!=null){
-                    completeCallback.onComplete(lists);
-                }
-                close();
-                break;
-        }
+//            case R.id.drag_close_img:
+//                //关闭，不回调数据
+//                close();
+//                break;
+//            case R.id.drag_finish_tv:
+//                //完成关闭，回调数据
+//                dragTipAdapter.cancelEditingStatus();
+//                if(completeCallback!=null){
+//                    completeCallback.onComplete(lists);
+//                }
+//                close();
+//                break;
+//        }
     }
     //每次由于拖动排序,添加或者删除item时会回调
     public interface OnDataChangeResultCallback{
